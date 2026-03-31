@@ -1,0 +1,16 @@
+# Traning 
+epochs: 2 #60
+batch_size: 32
+lr: 0.001
+lr_decay: 0.95
+
+# Model
+att_fuse: True
+num_joints: 17
+channels: 1024
+dropout: 0.5
+
+# Data
+window_len: 243
+step_size: 121
+num_classes: 15
