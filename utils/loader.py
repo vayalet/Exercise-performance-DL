@@ -49,8 +49,8 @@ class FullSequenceDataset(Dataset):
         """
         Load and process data for each subject as a full sequence.
         """
-        base_path_data = '.../data/test/' if self.test else 'C:/Users/u0170757/OneDrive - KU Leuven/Documents/AI@WZC/Dataset/'
-        path_imu = '.../results_test_pose/test/' if self.test else 'C:/Users/u0170757/OneDrive - KU Leuven/Documents/AI@WZC/Dataset/2D_Pose/'
+        base_path_data = '.../data/test/' if self.test else '.../Dataset/'
+        path_imu = '.../results_test_pose/test/' if self.test else '.../Dataset/2D_Pose/'
 
         all_data = []
         for subject in self.subjects:
@@ -197,8 +197,8 @@ class APDataset(Dataset):
         """
         Load and process data for each subject, generating sliding windows and checking data integrity.
         """
-        base_path_data = '.../data/test/' if self.test else 'C:/Users/u0170757/OneDrive - KU Leuven/Documents/AI@WZC/Dataset/'
-        path_imu = '.../results_test_pose/test/' if self.test else 'C:/Users/u0170757/OneDrive - KU Leuven/Documents/AI@WZC/Dataset/2D_Pose/'
+        base_path_data = '.../data/test/' if self.test else '.../Dataset/'
+        path_imu = '.../results_test_pose/test/' if self.test else '.../Dataset/2D_Pose/'
 
         all_poses = []
         all_windows = []
